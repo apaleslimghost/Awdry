@@ -12,7 +12,7 @@ export 'Awdry':
 
 		(Foo.handle \bar []) {}
 
-	'render finds a template':
+	'render finds a template': (done)->
 		class Foo extends Controller
 			@template = expect.sinon.stub!
 			bar: ->
@@ -22,7 +22,7 @@ export 'Awdry':
 
 		(Foo.handle \bar []) {}
 
-	'render passes parameters':
+	'render passes parameters': (done)->
 		class Foo extends Controller
 			@template = expect.sinon.stub!
 			bar: ->
