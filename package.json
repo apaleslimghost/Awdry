@@ -1,0 +1,27 @@
+{
+  "name": "awdry",
+  "version": "0.0.0",
+  "description": "Auto controller-view rendering",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/quarterto/Awdry.git"
+  },
+  "keywords": [
+    "view",
+    "layout",
+    "controller",
+    "sodor",
+    "brio",
+    "gusto"
+  ],
+  "author": "Matt Brennan <mwrbrennan@gmail.com> (http://blog.153.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quarterto/Awdry/issues"
+  },
+  "homepage": "https://github.com/quarterto/Awdry"
+}
