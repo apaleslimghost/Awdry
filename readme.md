@@ -1,4 +1,4 @@
-# Awdry
+# Awdry [![Build Status](https://travis-ci.org/quarterto/Awdry.svg)](https://travis-ci.org/quarterto/Awdry)
 
 Automatically find views to render from a controller action. Built on [Sodor](https://github.com/quarterto/Sodor)
 
