@@ -23,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/quarterto/Awdry/issues"
   },
-  "homepage": "https://github.com/quarterto/Awdry"
+  "homepage": "https://github.com/quarterto/Awdry",
+  "devDependencies": {
+    "LiveScript": "^1.2.0",
+    "karma-sinon-expect": "^0.1.4",
+    "mocha": "^1.21.4"
+  }
 }
