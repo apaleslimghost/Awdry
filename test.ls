@@ -1,11 +1,13 @@
 require! {
-	Controller: './index.js'
+	Awdry: './index.js'
+	'sodor'.Controller
 	'karma-sinon-expect'.expect
 }
 
 export 'Awdry':
 	'actions get a render method': (done)->
 		class Foo extends Controller
+			import Awdry
 			bar: ->
 				expect @render .to.be.a Function
 				done!
@@ -14,6 +16,7 @@ export 'Awdry':
 
 	'render finds a template': (done)->
 		class Foo extends Controller
+			import Awdry
 			@template = expect.sinon.stub!
 			bar: ->
 				@render!
@@ -24,6 +27,7 @@ export 'Awdry':
 
 	'render passes parameters': (done)->
 		class Foo extends Controller
+			import Awdry
 			@template = expect.sinon.stub!
 			bar: ->
 				@render r = a:1
