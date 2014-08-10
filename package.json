@@ -28,6 +28,9 @@
     "LiveScript": "^1.2.0",
     "karma-sinon-expect": "^0.1.4",
     "mocha": "^1.21.4",
+    "sodor": "^0.3.0",
+  },
+  "peerDependencies": {
     "sodor": "^0.3.0"
   }
 }
