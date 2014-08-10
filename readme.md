@@ -1,6 +1,6 @@
 # Awdry [![Build Status](https://travis-ci.org/quarterto/Awdry.svg)](https://travis-ci.org/quarterto/Awdry)
 
-Automatically find views to render from a controller action. Built on [Sodor](https://github.com/quarterto/Sodor)
+Automatically find views to render from a controller action. Works with [Sodor](https://github.com/quarterto/Sodor) 0.3.
 
 ```
 npm install awdry
@@ -11,7 +11,8 @@ Given a templater quite like [Brio](https://github.com/quarterto/Brio) that take
 
 ```javascript
 var extend = require('estira').extend;
-var Controller = require('awdry');
+var Controller = require('sodor').Controller;
+var awdry = require('awdry')
 var brio = require('brio');
 
 var templates = brio((t) => (d) => t, {
@@ -24,7 +25,7 @@ var Account = extend.call(Controller, 'Account', {
 	index: function() {
 		return this.render();
 	}
-});
+}).meta(awdry);
 
 Account.handle('index', [])({}); //⇒ 'hello world'
 ```
